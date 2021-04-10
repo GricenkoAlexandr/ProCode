@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProJS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Моя домашка</h1>
+        <h3>Калькулятор растаможки</h3>
+        <div class="calc_block">
+            <form class="auto_choice">
+                <input type="radio" checked name="car" class="radio_btn" value="1"><span>Легковые</span>
+                <input type="radio" name="car" class="radio_btn" value="0,7"><span>Электро</span>
+                <input type="radio" name="car" class="radio_btn" value="1.2"><span>Мото</span>
+                <input type="radio" name="car" class="radio_btn" value="3"><span>Грузовые</span>
+            </form>
+            <div class="year">
+                <span> Год выпуска</span><input type="number" class="year_car">
+            </div>
+            <div class="price">
+                <span>Цена</span> <input type="number" class="price_val">
+            </div>
+            <button type="submit" class="price-btn">Расчёт</button>
+            <div class="out_block">
+                <div class="out_price">
+                    <span class="out_price__val">0</span> грн.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
