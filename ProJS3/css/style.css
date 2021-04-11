@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Caveat', cursive;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .container {
@@ -15,6 +15,20 @@
     max-width: 1100px;
     height: 100vh;
     margin: 20px auto;
+    font-weight: 800;
+}
+h1 {
+    text-align: center;
+    color: fuchsia;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+h3{
+    text-align: center;
+    color:deeppink;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .calc_block {
@@ -23,19 +37,18 @@
 }
 
 .auto_choice {
-    background: cornflowerblue;
     margin: 10px auto;
 }
 
 .year {
-    background: darkgoldenrod;
+    margin: 20px auto;
 }
 
 .price {
-    background:darkgreen;
+    margin: 20px auto;
 }
 
 .out_block {
-    background:darkseagreen;
+    margin: 20px auto;
 }
 

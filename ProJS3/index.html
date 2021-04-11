@@ -7,18 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProJS3</title>
     <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://kit.fontawesome.com/e737e703b3.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div class="container">
         <h1>Моя домашка</h1>
         <h3>Калькулятор растаможки</h3>
         <div class="calc_block">
-            <form class="auto_choice">
-                <input type="radio" checked name="car" class="radio_btn" value="1"><span>Легковые</span>
-                <input type="radio" name="car" class="radio_btn" value="0,7"><span>Электро</span>
-                <input type="radio" name="car" class="radio_btn" value="1.2"><span>Мото</span>
-                <input type="radio" name="car" class="radio_btn" value="3"><span>Грузовые</span>
-            </form>
+            <div class="auto_choice">
+                <form name="rastacar">
+                    <label>
+                        <input type="radio" checked name="car" class="radio_btn" value="1"><span>Легковые</span><i class="fas fa-car"></i>
+                    </label>
+                    <label >
+                        <input type="radio" name="car" class="radio_btn" value="0.7"><span>Электро</span><i class="fas fa-bolt"></i>
+                    </label>
+                    <label >
+                        <input type="radio" name="car" class="radio_btn" value="1.2"><span>Мото</span><i class="fas fa-motorcycle"></i>
+                    </label>
+                    <label>
+                        <input type="radio" name="car" class="radio_btn" value="3"><span>Грузовые</span><i class="fas fa-truck"></i>
+                    </label>
+                </form>
+            </div>
             <div class="year">
                 <span> Год выпуска</span><input type="number" class="year_car">
             </div>
