@@ -1,16 +1,16 @@
 `use strict`;
 
  let arClass=[
-    { name: 'Александр', surname: 'Гриценко', task: 3 },
-    { name: 'Иванна', surname: 'Зимина', task: 5 },
-    { name: 'Александр', surname: 'Гетьманский', task: 9 },
-    { name: 'Наталья', surname: 'Горошко', task: 7 },
-    { name: 'Andrew', surname: 'Stehnii', task: 3 },
-    { name: 'Инна', surname: 'Олещенко', task: 8 },
-    { name: 'Николай', surname: 'Зайченко', task: 9 },
-    { name: 'Denis', surname: 'Rudik', task: 5 },
-    { name: 'Andrey', surname: 'Timoshenko', task: 7 },
-    { name: 'Артем', surname: 'Шевчук', task: 3 },
+    { name: 'Александр', surname: 'Гриценко', task: 3, ava: 'ava1.png' },
+    { name: 'Иванна', surname: 'Зимина', task: 5, ava: 'ava2.png' },
+    { name: 'Александр', surname: 'Гетьманский', task: 9, ava: 'ava5.png' },
+    { name: 'Наталья', surname: 'Горошко', task: 7, ava: 'ava2.png' },
+    { name: 'Andrew', surname: 'Stehnii', task: 3, ava: 'ava3.png' },
+    { name: 'Инна', surname: 'Олещенко', task: 8, ava: 'ava6.png' },
+    { name: 'Николай', surname: 'Зайченко', task: 9, ava: 'ava3.png'},
+    { name: 'Denis', surname: 'Rudik', task: 5, ava: 'ava5.png' },
+    { name: 'Andrey', surname: 'Timoshenko', task: 7, ava: 'ava3.png' },
+    { name: 'Артем', surname: 'Шевчук', task: 3, ava: 'ava5.png' },
  ];
 
 const btnAll=document.querySelector('.out1_btn');
@@ -21,7 +21,7 @@ const outTask=document.querySelector('.out-2');
 btnAll.addEventListener('click', ()=>{
     let out11=[];
     for (let i=0; i<arClass.length; i++){
-        out11+=`${i+1}. Cтудент ${arClass[i]['surname']} ${arClass[i]['name']} сделал ${arClass[i]['task']} заданий </br>`;
+        out11+=`${i+1}. <img src="/img/${arClass[i]['ava']}" height="40" class="avatar"> ${arClass[i]['surname']} ${arClass[i]['name']} сделал ${arClass[i]['task']} заданий </br>`;
     }
 
     outAll.innerHTML=out11;
@@ -39,7 +39,7 @@ btnTask.addEventListener('click', ()=>{
             return tas.task>=tasq;
         })
         for (let i=0; i<arClassfilter.length; i++){
-            out12+=`${i+1}. Cтудент ${arClassfilter[i]['surname']} ${arClassfilter[i]['name']} сделал ${arClassfilter[i]['task']} заданий </br>`;
+            out12+=`${i+1}. <img src="/img/${arClass[i]['ava']}" height="40" class="avatar"> ${arClassfilter[i]['surname']} ${arClassfilter[i]['name']} сделал ${arClassfilter[i]['task']} заданий </br>`;
         }
     }
 

@@ -77,6 +77,11 @@ h3 {
     margin: 20px;
 }
 
+.avatar {
+    align-self:baseline;
+    vertical-align: middle;
+}
+
 .out-2 {
     color: #f50a1e;
     font-weight: 700;
