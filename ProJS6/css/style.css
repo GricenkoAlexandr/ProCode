@@ -1,0 +1,27 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    background: url(/img/bg11.jpg) no-repeat fixed center;
+    background-size: 100%;
+}
+
+.wrapper {
+    background: rgba(255, 99, 71, 0.5);
+    max-width: 1000px;
+    min-height: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color:turquoise;
+    font-size: 2rem;
+    margin: 20px;
+}
