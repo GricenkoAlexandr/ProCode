@@ -3,8 +3,6 @@
 const getdate= ()=> {
     const firstArg=document.querySelector('.first').value;
     const secondtArg=document.querySelector('.second').value;
-    console.log(firstArg);
-    console.log(secondtArg);
     return [firstArg, secondtArg]
 }
 
@@ -28,4 +26,21 @@ divBtn.addEventListener('click', ()=> {
 })
 
 
+const getdatesqr= ()=> {
+    const base=document.querySelector('.base').value;
+    const sqrt=document.querySelector('.sqrt').value;
+    return [base, sqrt]
+}
 
+const outressqrt=(resultsqrt)=> {
+    document.querySelector('.out2').innerHTML=resultsqrt;
+}
+
+const sBtn=document.querySelector('.sbtn');
+
+sBtn.addEventListener('click', ()=> {
+    const valssq=getdatesqr();
+    const sqr=(1/valssq[1]);
+    const resultsqrt=Math.pow(valssq[0], sqr);
+    outressqrt(resultsqrt);
+})

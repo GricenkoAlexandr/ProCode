@@ -14,7 +14,7 @@ body {
 .wrapper {
     background: rgba(255, 99, 71, 0.5);
     max-width: 1000px;
-    min-height: 800px;
+    min-height: 200px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -25,4 +25,9 @@ h1 {
     color:turquoise;
     font-size: 2rem;
     margin: 20px;
+}
+
+.calc_block,
+.sqrt_block {
+    margin: 40px auto;
 }

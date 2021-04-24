@@ -10,15 +10,27 @@
   <body>
     <div class="wrapper">
       <h1>Моя домашка №6</h1>
-      <div class="form_block">
-        <form name="calc_form" >
-          <input type="number" class="first" placeholder="Ввведите сюда первое число" />
-          <input type="number" class="second" placeholder="Ввведите сюда второе число" />
-        </form>
-        <button type="submit" class="mbtn" >mul</button>
-        <button type="submit" class="dbtn" >divis</button>
-      </div>
-      <div class="out1"></div>
+          <div class="form_block">
+            <div class="calc_block">
+                <form name="calc_form" >
+                  <input type="number" class="first" placeholder="Ввведите сюда первое число" />
+                  <input type="number" class="second" placeholder="Ввведите сюда второе число" />
+                </form>
+                <button type="submit" class="mbtn" >mul</button>
+                <button type="submit" class="dbtn" >divis</button>
+            </div>
+            <div class="out1"></div>
+          </div>
+          <div class="form_block">
+            <div class="sqrt_block">
+              <form name="sqrt_form" >
+                <input type="number" class="base" placeholder="Ввведите сюда базу" />
+                <input type="number" class="sqrt" placeholder="Ввведите сюда степень" />
+              </form>
+              <button type="submit" class="sbtn" >sqrt</button>
+            </div>
+            <div class="out2"></div>
+            </div>
     </div>
     <script src="js/script.js"></script>
   </body>
