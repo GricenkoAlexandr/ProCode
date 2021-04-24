@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    justify-content: center;
+}
+
+body {
+    background: url(/img/bg9.jpg) no-repeat fixed center;
+    background-size: 100%;
+}
+
+h1 {
+    color:#404be0;
+    font-size: 2rem;
+    margin: 30px;
+    text-align: center;
+}
+
+.wrapper {
+    background: rgba(255, 99, 71, 0.5);
+    min-width: 80%;
+    min-height: 200px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.input_block{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.rbtn,
+.cbtn {
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.startbtn {
+    width: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgba(215, 255, 71, 0.664);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.out_block {
+    max-width: 100%;
+    margin: 20px;
+}
+
+.rows {
+    border:2px solid black;
+    width: 100px;
+    height: 100px;
+    background:blueviolet;
+    display:inline-block;
+    margin: 2px 5px;
+    border-radius: 10px;
+}
+
+.manager {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.manager button {
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    background: rgba(216, 13, 80, 0.664);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hide {
+    display: none;
+}
