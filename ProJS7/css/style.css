@@ -70,7 +70,10 @@ h1 {
     justify-content: space-around;
 }
 
-.manager button {
+.up,
+.rt,
+.dw,
+.lf {
     width: 100px;
     height: 40px;
     font-weight: 600;
@@ -93,4 +96,8 @@ h1 {
 
 .hide {
     display: none;
+}
+
+.yellow {
+    background: yellow;
 }
