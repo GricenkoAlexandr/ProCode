@@ -79,6 +79,18 @@ h1 {
     padding: 5px;
 }
 
+.spider {
+    position: relative;
+}
+
+.spider img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
 .hide {
     display: none;
 }

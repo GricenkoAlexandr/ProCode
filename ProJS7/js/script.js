@@ -7,6 +7,7 @@ startBtn.addEventListener('click', ()=> {
     const colBtn=document.querySelector('.cbtn').value;
     const outBlock=document.querySelector('.out_block');
     const displ=document.querySelector('.manager');
+    const spider=document.querySelector('.spider');
     let cols='';
     for (let i=0;i<colBtn;i++) {
         cols+='<br>';
@@ -16,17 +17,20 @@ startBtn.addEventListener('click', ()=> {
     }
     outBlock.innerHTML=cols;
     displ.classList.remove('hide');
+    spider.classList.remove('hide');
 });
 
 
-/*
-const btns={
+
+const btns=[
     {name: 'up', state: true},
     {name: 'right', state: true},
     {name: 'down', state: true},
     {name: 'left', state: true},
-}
-*/
+];
+
+
+
 
 
 
