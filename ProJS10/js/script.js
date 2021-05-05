@@ -15,6 +15,8 @@
     { id: 10, uData: {name: 'Артем', surname: 'Шевчук'}, },
  ];
 
+// controler
+
 const btninp=document.querySelector('.btn_id');
 const output=document.querySelector('.output');
 const form=document.forms.firstForm;
@@ -25,6 +27,7 @@ function User (datac) {
     this.surname=datac.uData.surname;
 } 
 
+// view
 form.addEventListener('submit', (ev)=> {
     ev.preventDefault();
     const data= new FormData(ev.target);
@@ -39,17 +42,7 @@ form.addEventListener('submit', (ev)=> {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-/*
+/* Task 2 */
 
  const dish=[
     {namedish: 'salat', ingred: ['kartoshka', 'luk', 'goroshek', 'morkovka']},
@@ -59,6 +52,7 @@ form.addEventListener('submit', (ev)=> {
  ];
 
  const dishItem=document.querySelectorAll('.dish_item');
+ console.log(dishItem);
  const ditems=Array.from(dishItem);
 
  for (let i=0; i<ditems.length;i++) {
@@ -74,9 +68,8 @@ form.addEventListener('submit', (ev)=> {
     let out1=[];
     outArr=dish.map((el)=> {
         el.ingred.includes(inpI);
-        
     })
     console.log(outArr);
+    out1+=outArr;
+    console.log(out1);
  })
-
- */
