@@ -76,6 +76,11 @@ header {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+    transition: 1s;
+}
+
+.menu_item:hover {
+    color: #FED233;
 }
 
 .header_content {
