@@ -58,7 +58,7 @@ let arClass=[
 задача 2. Есть список блюд в виде массива, у блюд есть список ингридиентов.
 Есть список на экране с блюдами из массива.  При вводе в специальное поле ингридиента, должны оставаться только те блюда на экране, которые содержат этот ингридиент
 
-*/
+
 
 const dish=[
     {namedish: 'salat', ingred: ['kartoshka', 'luk', 'goroshek', 'morkovka']},
@@ -83,9 +83,54 @@ const dish=[
     let out1=[];
     outArr=dish.map((el)=> {
         el.ingred.includes(inpI);
-        /*out1+=`${el.namedish} <br>`;*/
+        /*out1+=`${el.namedish} <br>`;
     })
     console.log(outArr);
  })
 
 
+ */
+
+/*
+
+ const ingridients = [
+    { id: 'e88', name: 'картошка', alergen: false, kkal: 100 },
+    { id: '08a', name: 'лук', alergen: true, kkal: 200 },
+    { id: 'a0b', name: 'шкварки', alergen: false, kkal: 300 },
+    { id: '0dd', name: 'бульйон', alergen: false, kkal: 400 },
+    { id: 'd12', name: 'морковка', alergen: false, kkal: 500 },
+    { id: '8a1', name: 'оливковая олия', alergen: false, kkal: 600 }
+  ];
+
+
+  const ing = {
+       id: 'e88',
+        name: 'картошка',
+         alergen: false,
+        kkal: 100,
+        weight: 200,
+        get comonCal() {
+            return 15;
+        },
+
+        set comonCal(val) {
+            const val=(this.weight/100)*this.kkal;
+            return val;
+        },
+
+        }
+
+        console.log (ing.comonCal);
+
+*/
+
+const chel = {
+    name:'Alex',
+    lastName: 'Griko',
+
+    get fName() {
+        return ` ${this.name} ${this.lastName}`;
+    },
+};
+
+console.log(chel.fName);
