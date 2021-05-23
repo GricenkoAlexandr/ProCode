@@ -134,3 +134,17 @@ const chel = {
 };
 
 console.log(chel.fName);
+
+
+let str='Фанера березовая 3/4 - 16мм` Брусок 30*40` ППУ HR3535 - 5см` Ткань Felicita Strada №04` Лента скрытого шва (на углах изголовья)';
+
+let arrstr=str.split('`');
+console.log(arrstr);
+
+const out11=document.querySelector('.out_block');
+
+let out111='';
+for (let i=0; i<arrstr.length; i++) {
+    out111+=` ${arrstr[i]} <br>`;
+}
+out11.innerHTML=out111;

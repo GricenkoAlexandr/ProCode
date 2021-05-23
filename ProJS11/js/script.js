@@ -33,6 +33,6 @@ const test = () => {
   const {ingridients} =test();
 
   const rez=ingridients.filter(alerg=()=> {
-    alerg.alergen===true;
+    ingridients===true;
   })
-  console.log(rez);
+  console.log(ingridients);
