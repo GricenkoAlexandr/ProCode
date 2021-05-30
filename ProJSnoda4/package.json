@@ -1,0 +1,16 @@
+{
+  "name": "noda4",
+  "version": "1.0.0",
+  "description": "task4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "author": "Gritsenko Alexandr",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "file-system": "^2.2.2"
+  }
+}
