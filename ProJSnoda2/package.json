@@ -8,5 +8,8 @@
     "start": "node ./index.js"
   },
   "author": "Gritsenko Alexandr",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }

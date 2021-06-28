@@ -9,10 +9,11 @@ const http=require('http');
 const fse = require('fs-extra');
 const axios=require('axios');
 
-http.createServer((request, response) => {
+http.createServer((req, res) => {
     console.log('Server work:');
-    console.log(request);
+    console.log('адресс запросса:',req.url);
+    console.log('Тип запросса:',req.method);
+    res.end("Some text2");
+}).listen(3000, ()=> {
     console.log("Server started at 3000");
-
-    response.end("Some text2");
-}).listen(3000);
+});
