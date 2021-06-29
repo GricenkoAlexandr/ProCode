@@ -6,14 +6,19 @@ console.log('Begin!');
 
  */
 const http=require('http');
-const fse = require('fs-extra');
+const fs = require('fs-extra');
 const axios=require('axios');
 
 http.createServer((req, res) => {
+
+    //Читает запрос
     console.log('Server work:');
     console.log('адресс запросса:',req.url);
     console.log('Тип запросса:',req.method);
-    res.end("Some text2");
+    //отсылает файл
+    fs.createReadStream("./text.txt").pipe(res);
+
+    
 }).listen(3000, ()=> {
     console.log("Server started at 3000");
 });
